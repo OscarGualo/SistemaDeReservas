@@ -19,6 +19,5 @@ public class Reserva {
         this.estado = estado;
         this.habitaciones = habitaciones;
         this.paquete = paquete;
-        this.cliente = cliente;
     }
 }
