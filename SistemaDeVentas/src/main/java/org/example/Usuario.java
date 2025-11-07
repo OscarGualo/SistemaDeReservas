@@ -15,4 +15,7 @@ public abstract class Usuario {
         this.contrasena = contrasena;
     }
 
+    public abstract void iniciarSesion();
+    public abstract void cerrarSesion();
+    public abstract void modificarDatos();
 }
