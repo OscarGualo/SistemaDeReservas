@@ -15,4 +15,19 @@ public abstract class Usuario {
         this.contrasena = contrasena;
     }
 
+    public boolean iniciarSesion(String correo, String contrasena){
+        //logica de inicio de sesion
+        return false;
+    };
+    public void cerrarSesion(){
+        //logica de cierre de sesion
+        System.out.println("Sesion cerrada");  
+    };
+    public void modificarDatos(String nombres, String apellidos, String email){
+        //logica de modificacion de datos
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.email = email;
+    };
+
 }
