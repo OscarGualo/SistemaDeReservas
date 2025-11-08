@@ -1,22 +1,44 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Paquete {
+
     private String nombre;
     private String descripcion;
-    private double precioBase;
-    private List<Servicio> serviciosIncluidos; //REALCION ENTRE PAQUETE Y SERVICIO 1 A N
-    private List<Promocion> promocionesAplicadas; //RELACION ENTRE PAQUETE Y PROMOCION 1 A N ACA SE INCLUYE COMPOSICION ENVEZ DE AGREGACION COMO ESTA EN EL DIAGGRAMA
-    private List<Habitacion> habitaciones; //RELACION ENTRE PAQUETE Y HABITACION 1 A N
+    private Double precioBase;
+    private double descuentoPaquete;
 
-    public Paquete(String nombre, String descripcion, double precioBase) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precioBase = precioBase;
-        this.serviciosIncluidos = new ArrayList<>();
-        this.promocionesAplicadas = new ArrayList<>();
-        this.habitaciones = new ArrayList<>();
+    // Agregación (*)
+    public ArrayList<Servicio> servicio = new ArrayList<>();
+
+    // Agregación (*)
+    public ArrayList<Promocion> promocion = new ArrayList<>();
+
+    // Agregación (1..*)
+    public ArrayList<Habitacion> habitacion = new ArrayList<>();
+
+    // ------------------ MÉTODOS ------------------
+
+    public double calcularPrecioTotal(){
+        // lógica futura
+        return 0;
+    }
+
+    public void agregarServicio(Servicio servicio){
+        // lógica futura
+    }
+
+    public void quitarServicio(Servicio servicio){
+        // lógica futura
+    }
+
+    public void aplicarPromocion(Promocion promocion){
+        // lógica futura
+    }
+
+    public boolean verificarDisponibilidad(String fechas){
+        return true;
     }
 }
+
