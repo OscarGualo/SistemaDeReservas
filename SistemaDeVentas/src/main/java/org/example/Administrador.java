@@ -16,4 +16,19 @@ public class Administrador extends Usuario{
         // Lógica para gestionar servicios
     }
     
+    @Override
+    public void iniciarSesion(){
+        System.out.println("Iniciando Sesion administrador.....");
+    }
+
+    @Override
+    public void cerrarSesion() {
+        System.out.println("Cerrando Sesion cliente-..... ");
+    }
+
+    @Override
+    public void modificarDatos() {
+        System.out.println("Modificando Sesion cliente-..... ");
+
+    }
 }

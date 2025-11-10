@@ -1,8 +1,12 @@
 package org.example;
 
-public class Cliente extends Usuario {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente extends Usuario{
     private String direccion;
-    private String preferencias;
+    private String telefono;
+    private List<Reserva> reservas = new ArrayList<>(); //RELACION BIDIRECCIONAL * CON LA CLASE RESERVA
 
     public Cliente(String cedula, String nombres, String apellidos, String email, String contrasena, String direccion, String preferencias) {
         super(cedula, nombres, apellidos, email, contrasena);
@@ -22,4 +26,19 @@ public class Cliente extends Usuario {
     public void modificarReserva() {
         // Lógica para modificar una reserva
     }
+    @Override
+    public void iniciarSesion(){
+        System.out.println("Iniciando Sesion cliente-..... ");
+    }
+
+    @Override
+    public void cerrarSesion() {
+        System.out.println("Cerrando Sesion cliente-..... ");
+    }
+
+    @Override
+    public void modificarDatos() {
+        System.out.println("Modificando Sesion cliente-..... ");
+    }
+
 }

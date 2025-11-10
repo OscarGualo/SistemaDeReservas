@@ -20,4 +20,18 @@ public class Recepcionista extends Usuario{
     public void registrarPago(Pago pago) { }
     public void verificarDisponibilidadHabitacion(Habitacion habitacion) { }
 
+    @Override
+    public void iniciarSesion() {
+        System.out.println("Iniciando Sesion cliente-..... ");
+    }
+
+    @Override
+    public void cerrarSesion() {
+        System.out.println("Cerrando Sesion cliente-..... ");
+    }
+
+    @Override
+    public void modificarDatos() {
+        System.out.println("Modificando Sesion cliente-..... ");
+    }
 }
