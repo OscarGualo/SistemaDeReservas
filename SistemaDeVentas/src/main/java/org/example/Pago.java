@@ -7,4 +7,9 @@ public class Pago {
     private LocalDate fechaPago;
     private MetodoPago metodo;
     private Reserva reserva;
+
+    public Pago (double monto, LocalDate fechaPago){
+        this.monto = monto;
+        this.fechaPago = fechaPago;
+    }
 }
